@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Pterodactyl</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<style>
+		html {
+    scroll-behavior: smooth;
+}
+
+        .notification {
+            position: fixed;
+            bottom: -225px; /* Mulai dari bawah layar */
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: white;
+            padding: 50px;
+            border-radius: 8px;
+            width: 500px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: bottom 0.3s ease; /* Animasi untuk naik */
+        }
+
+        /* Gaya untuk tombol */
+        .notification button {
+            margin: 5px;
+            padding: 10px 20px;
+            background-color: #ff9900;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .notification button:hover {
+            background-color: #ff6600;
+        }
+</style>
+    <header>
+    	
+     <div class="notification" id="notification">
+        <h5>Kami telah melayani ribuan orang</h5>
+        <h5>Dan mempunyai banyak testi</h5>
+        <h5>Silahkan masuk Group untuk melihatnya.</h5>
+        <h4> Selamat Berbelanja </h4>
+        
+        <button onclick="closeNotification()">Nanti Saja</button>
+        <a href="https://whatsapp.com/channel/0029VasQLiP2kNFqH8Lv9L1M">
+        <button onclick="testi()">Lihat Testi</button>
+        </a>
+    </div>
+
+    <script>
+        // Menampilkan notifikasi setelah beberapa detik
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById("notification").style.bottom = "20px"; // Menampilkan notifikasi
+            }, 500); // Menunggu 500ms setelah halaman dimuat
+        };
+
+        // Fungsi untuk melihat testi
+        function testi() {
+            window.location.href()
+            // Ganti dengan tindakan login yang sesuai (misal, redirect ke halaman login)
+        }
+
+        // Fungsi untuk menutup notifikasi
+        function closeNotification() {
+            document.getElementById("notification").style.bottom = "-225px"; // Menyembunyikan notifikasi
+        }
+    </script>
+        <div class="container">
+            <div class="logo">
+                <h1>Dilzz Store</h1>
+                <p>Menjual Panel Pterodactyl</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Fitur</a></li>
+                    <li><a href="#pricing">Harga</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>Panel Pterodactyl Terbaik untuk Manajemen Server Game</h2>
+            <p>Keamanan, kemudahan, dan kontrol penuh atas server Anda dengan panel Pterodactyl.</p>
+            <a href="#pricing" class="cta-button">Beli Sekarang</a>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <h2>Fitur Panel Pterodactyl</h2>
+            <div class="feature">
+                <h3>Antarmuka yang Ramah Pengguna</h3>
+                <p>Dengan antarmuka yang mudah dipahami, Anda bisa mengelola server tanpa masalah.</p>
+            </div>
+            <div class="feature">
+                <h3>Keamanan yang Kuat</h3>
+                <p>Pterodactyl menawarkan perlindungan terbaik untuk server Anda, menjamin data Anda tetap aman.</p>
+            </div>
+            <div class="feature">
+                <h3>Pengelolaan Sumber Daya</h3>
+                <p>Kelola CPU, RAM, dan disk server dengan mudah untuk kinerja optimal.</p>
+            </div>
+            <div class="feature">
+            	<h2>Dilzz Store</h2>
+            <p>Aman dan Terpercaya, Silahkan Lihat Testi Dengan mengklick Tombol Di bawah ini.</p>
+            <a href="https://whatsapp.com/channel/0029VasQLiP2kNFqH8Lv9L1M" class="cta-button" style="border-radius: 7px;">Group Testi</a>
+            <a href="https://chat.whatsapp.com/KXdRzNJjwF9FfZmAkt8HdM" class="cta-button" style="border-radius: 7px;">Group Store</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <div class="container">
+            <h2>Pilih Paket yang Sesuai dengan Kebutuhan Anda</h2>
+            <div class="pricing-table">
+                <div class="pricing-option" style="background-image: url('logo.jpg'); background-size: cover; background-position: center; padding: 20px; border-radius: 10px; color: white; box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);">
+                <h3 style="text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);">Server Private</h3>
+                <p style="text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);">Rp2.000</p>
+                    <ul>
+                    	<li>Per Bulan</li>
+                        <li>1 GB RAM</li>
+                        <li>Disk 30%</li>
+                    </ul>
+                    <a href="https://wa.me/6281234567890?text=Bang%20Beli%20Panel%20Yang%201 Gb" class="cta-button">Beli Sekarang</a>
+                </div>
+                <div class="pricing-option" style="background-image: url('logo.jpg'); background-size: cover; background-position: center; padding: 20px; border-radius: 10px; color: white; box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);">
+                <h3 style="text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);">Server Private</h3>
+                <p style="text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);">Rp3.000</p>
+                    <ul>
+                        <li>Per Bulan</li>
+                        <li>2 GB RAM</li>
+                        <li>Disk 60 %</li>
+                    </ul>
+                    <a href="https://wa.me/6281234567890?text=Bang%20Beli%20Panel%20Yang%202 Gb" class="cta-button">Beli Sekarang</a>
+                </div>
+                <div class="pricing-option" style="background-image: url('logo.jpg'); background-size: cover; background-position: center; padding: 20px; border-radius: 10px; color: white; box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);">
+                    <h3 style="text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);">Server Private</h3>
+                <p style="text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);">Rp4.000</p>
+                    <ul>
+                        <li>Per Bulan</li>
+                        <li>3 GB RAM</li>
+                        <li>Disk 80 %</li>
+                    </ul>
+                    <a href="https://wa.me/6281234567890?text=Bang%20Beli%20Panel%20Yang%203 Gb" class="cta-button">Beli Sekarang</a>
+                </div>
+                <div class="pricing-option" style="background-image: url('logo.jpg'); background-size: cover; background-position: center; padding: 20px; border-radius: 10px; color: white; box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);">
+                    <h3 style="text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);">Server Private</h3>
+                <p style="text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);">Rp5.000</p>
+                    <ul>
+                        <li>Per Bulan</li>
+                        <li>4 GB RAM</li>
+                        <li>Disk 100 %</li>
+                    </ul>
+                    <a href="https://wa.me/6281234567890?text=Bang%20Beli%20Panel%20Yang%204 Gb" class="cta-button">Beli Sekarang</a>
+                </div>
+                <div class="pricing-option" style="background-image: url('logo.jpg'); background-size: cover; background-position: center; padding: 20px; border-radius: 10px; color: white; box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);">
+                <h3 style="text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);">Server Private</h3>
+                <p style="text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);">Rp6.000</p>
+                    <ul>
+                        <li>Per Bulan</li>
+                        <li>5 GB RAM</li>
+                        <li>Cpu 120 %</li>
+                    </ul>
+                    <a href="https://wa.me/6281234567890?text=Bang%20Beli%20Panel%20Yang%205 Gb" class="cta-button">Beli Sekarang</a>
+                </div>
+                <div class="pricing-option" style="background-image: url('logo.jpg'); background-size: cover; background-position: center; padding: 20px; border-radius: 10px; color: white; box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);">
+                    <h3 style="text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);">Server Private</h3>
+                <p style="text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);">Rp7.000</p>
+                    <ul>
+                        <li>Per Bulan</li>
+                        <li>6 GB RAM</li>
+                        <li>Cpu 140 %</li>
+                    </ul>
+                    <a href="https://wa.me/6281234567890?text=Bang%20Beli%20Panel%20Yang%206 Gb" class="cta-button">Beli Sekarang</a>
+                </div>
+              <div class="pricing-option" style="background-image: url('logo.jpg'); background-size: cover; background-position: center; padding: 20px; border-radius: 10px; color: white; box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);">
+                    <h3 style="text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);">Server Private</h3>
+                <p style="text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);">Rp8.000</p>
+                    <ul>
+                        <li>Per Bulan</li>
+                        <li>7 GB RAM</li>
+                        <li>Cpu 160 %</li>
+                    </ul>
+                    <a href="https://wa.me/6281234567890?text=Bang%20Beli%20Panel%20Yang%207 Gb" class="cta-button">Beli Sekarang</a>
+                </div>
+                <div class="pricing-option" style="background-image: url('logo.jpg'); background-size: cover; background-position: center; padding: 20px; border-radius: 10px; color: white; box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);">
+                    <h3 style="text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);">Server Private</h3>
+                <p style="text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);">Rp10.000</p>
+                    <ul>
+                        <li>Per Bulan</li>
+                        <li>Unli GB RAM</li>
+                        <li>Cpu Unli</li>
+                    </ul>
+                    <a href="https://wa.me/6281234567890?text=Bang%20Beli%20Panel%20Yang%20Unlii" class="cta-button">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>Tentang Dilzz Store</h2>
+            <p>Dilzz Store adalah penyedia layanan panel Pterodactyl yang terpercaya untuk manajemen server game.</p>
+            <p>Kami menawarkan layanan terbaik dengan fokus pada kemudahan penggunaan dan keamanannya.</p>
+           <p>Panel kami sudah digunakan oleh berbagai komunitas game besar dan kecil.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+    <div class="container">
+        <h2>Kontak Kami</h2>
+        <form id="contactForm">
+            <input type="text" name="username" id="username" placeholder="Nama" required pattern="[A-Za-z0-9 ]+" title="Hanya boleh huruf, angka, dan spasi.">
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <textarea name="message" id="message" placeholder="Pesan" required></textarea>
+            <button type="submit" style="border-radius: 10px";>Kirim</button>
+        </form>
+    </div>
+</section>
+
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const username = document.getElementById("username").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+        const textMessage = `Nama: ${username}%0AEmail: ${email}%0AMessage: ${message}`;
+
+        const phoneNumber = "6285772285747";
+        const url = `https://wa.me/${phoneNumber}?text=${textMessage}`;
+
+        window.open(url, "_blank");
+    });
+</script>
+
+    <footer style="background-image: url('logo.jpg'); background-size: cover; background-position: center; padding: 5px;">
+    <div class="container">
+        <p style="text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);">copyright 2024 Dilzz Store - Panel Pterodactyl</p>
+    </div>
+</footer>
+
+
+    <script>// scripts.js
+document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Pesan telah terkirim!');
+});
+</script>
+</body>
+</html>
